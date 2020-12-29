@@ -15,7 +15,7 @@ public class CoinChange
 	public static int change(int moneyAmount, int [] coins)
 	{
 		int [] combinations = new int [moneyAmount + 1];
-		combinations[0] = 1;
+		combinations[0] = 1; // initialize zero amount to 1
 		
 		for(int coin: coins)
 		{
